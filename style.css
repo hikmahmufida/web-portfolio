@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: grey;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.pre-title::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Atur sesuai kebutuhan */
+    z-index: 1000; /* Pastikan z-index lebih tinggi dari elemen-elemen lain di halaman */
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    transition: 0.2s ease-in-out;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-size: 18px;
+}
+
+.nav ul a:hover {
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    color: #BAA898;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.logo a {
+    color: black;
+}
+
+nav ul li a {
+    color: black;
+}
+
+#home {
+    width: 100%;
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.home-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+    color: black;
+}
+
+.home-right img {
+    width: 400px;
+    border-radius: 0.7rem;
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    padding-left: 3rem;
+    /* padding-bottom: 5rem; */
+}
+
+#about {
+    background-color: #BAA898;
+    padding: 3.5rem 0 3rem;
+}
+
+.section-title-about {
+    text-align: center;
+    margin: 1rem 0 4rem;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.about {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: white;
+    border-radius: 0.7rem;
+}
+
+.about h4 {
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.about p {
+    color: white;
+}
+
+.about-icon {
+    background-color: rgb(209, 207, 207);
+    width: fit-content;
+    margin: auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.about-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.about-par {
+    font-size: 14px;
+}
+
+#skills {
+    padding: 6rem 0;
+    background: white;
+}
+
+.section-title-skills {
+    text-align: center;
+    margin: 0 0 4rem;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.experience {
+    display: flex;
+    gap: 2rem;
+}
+
+.experience line {
+    padding: 0 0.7rem;
+}
+
+.experience .line div {
+    width: 2px;
+    height: 100%;
+    background: black;
+    position: relative;
+}
+
+.experience-title {
+    font-size: 18px;    
+    font-weight: bold;
+}
+
+.experience-info {
+    margin: 0.7rem;
+}
+
+.experience-date {
+    margin-top: -10px;
+    font-size: 14px;    
+    font-weight: bold;
+}
+
+.experience .line div::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skills-right {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+#contact {
+    background-color: #BAA898;
+    padding: 6rem 0 0;
+}
+
+.section-title-contact {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+footer {
+    margin-bottom: 0;
+    padding: 0;
+    background: #BAA898;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+    fill: grey;
+}
+
+.footer-icons img {
+    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+}
+
+.footer-icons a {
+    margin: 0 2rem;
+}
+
+.footer-icons a:hover {
+    fill: black;
+}
